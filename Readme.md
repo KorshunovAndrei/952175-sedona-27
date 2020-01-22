@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Коршунов](https://up.htmlacademy.ru/htmlcss/27/user/952175).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
