@@ -46,7 +46,7 @@
   					<span>- №1 -</span>
   					<p>Седона - не аттракцион для туристов,
   						там течёт своя жизнь</p>
-  					<img src="img/index_image_1.jpg" width="800" height="401" alt="Местное популярное заведение Open Bange">
+  					<img src="img/index-image-1.jpg" width="800" height="401" alt="Местное популярное заведение Open Bange">
   					<ol>
   						<li>
   							<!-- <img src="img_logo-1" alt="img_logo-1"> -->
@@ -66,7 +66,7 @@
   					</ol>
   				</li>
   				<li>
-  					<img src="img/index_image_2.jpg" width="800" height="400" alt="Мост созданный самой природой">
+  					<img src="img/index-image-2.jpg" width="800" height="400" alt="Мост созданный самой природой">
   					<h2>Там есть мост дьявола</h2>
   					<span>- №2 -</span>
   					<p>Да, по нему можно пройти если конечно вы осмелитесь</p>
@@ -97,24 +97,30 @@
   				и мы покажем вам лучшие предложения гостиниц в седоне
   			</p>
   			<button type="button">Поиск гостиницы в седоне</button>
+
   			<!--Форма поиска гостиницы в седоне -->
-  			<form name="search_hotel" method="get" action="">
-  				<label>
-  					Дата заезда: 
-  					<input type="date" name="arrival_date" value="2017-04-24">
-  				</label>
-  				<label>
-  					Дата выезда: 
-  					<input type="date" name="date_of_departure" value="2017-07-04">
-  				</label>
-  				<label>
-  					Взрослые: 
-  					<input type="number" name="man_number" value="2">
-  				</label>
-  				<label>
-  					Дети:
-  					<input type="number" name="children_number" value="0">
-  				</label>
+  			<form method="get" action="https://echo.htmlacademy.ru">
+  				<label for="arrival-date">Дата заезда:</label> 
+  				<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+  				<button type="button">
+  				<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
+  				</button>
+
+  				<label for="date-of-departure">Дата выезда:</label>
+  				<input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+  				<button type="button">
+  				<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
+  				</button>
+
+  				<label for="man-number">Взрослые:</label>
+  				<button type="button">-</button> 
+  				<input type="number" name="man-number" id="man-number" value="2">
+  				<button type="button">+</button>
+  				<label for="children-number">Дети:</label>
+  				<button type="button">-</button>
+  				<input type="number" name="children-number" id="children-number" value="0">
+  				<button type="button">+</button>
+
   				<button type="submit">Найти</button>
   			</form>
   			<!-- Здесь будет интерактивная карта -->
@@ -139,7 +145,7 @@
 
   		<a href="https://htmlacademy.ru/intensive/htmlcss">
   			Website by
-  			<img src="img/html_academy_logo.svg" width="115" height="41" alt="htmlacademy">
+  			<img src="img/html-academy-logo.svg" width="115" height="41" alt="htmlacademy">
   		</a>
   	</footer>
   </body>
