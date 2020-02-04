@@ -98,6 +98,25 @@
   			</p>
   			<button type="button">Поиск гостиницы в седоне</button>
   			<!--Форма поиска гостиницы в седоне -->
+  			<form name="search_hotel" method="get" action="">
+  				<label>
+  					Дата заезда: 
+  					<input type="date" name="arrival_date" value="2017-04-24">
+  				</label>
+  				<label>
+  					Дата выезда: 
+  					<input type="date" name="date_of_departure" value="2017-07-04">
+  				</label>
+  				<label>
+  					Взрослые: 
+  					<input type="number" name="man_number" value="2">
+  				</label>
+  				<label>
+  					Дети:
+  					<input type="number" name="children_number" value="0">
+  				</label>
+  				<button type="submit">Найти</button>
+  			</form>
   			<!-- Здесь будет интерактивная карта -->
   			<img src="img/map.png" width="1718" height="748" alt="Наши координаты">
   		</section>
