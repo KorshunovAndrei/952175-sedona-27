@@ -102,24 +102,22 @@
   			<form method="get" action="https://echo.htmlacademy.ru">
   				<label for="arrival-date">Дата заезда:</label> 
   				<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-  				<button type="button">
-  				<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
+  				<button type="button" aria-label="Открыть календарь">
+  					<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
   				</button>
-
   				<label for="date-of-departure">Дата выезда:</label>
   				<input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
-  				<button type="button">
-  				<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
+  				<button type="button" aria-label="Открыть календарь">
+  					<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
   				</button>
-
-  				<label for="man-number">Взрослые:</label>
-  				<button type="button">-</button> 
-  				<input type="text" name="man-number" id="man-number" placeholder="2">
-  				<button type="button">+</button>
+  				<label for="adult-number">Взрослые:</label>
+  				<button type="button" aria-label="Уменьшить колличество человек">-</button> 
+  				<input type="text" name="adult-number" id="adult-number" placeholder="2">
+  				<button type="button" aria-label="Увеличить колличество человек">+</button>
   				<label for="children-number">Дети:</label>
-  				<button type="button">-</button>
+  				<button type="button" aria-label="Уменьшить колличество человек">-</button>
   				<input type="text" name="children-number" id="children-number" placeholder="0">
-  				<button type="button">+</button>
+  				<button type="button" aria-label="Увеличить колличество человек">+</button>
 
   				<button type="submit">Найти</button>
   			</form>
