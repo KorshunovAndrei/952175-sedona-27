@@ -34,26 +34,25 @@
         <h2>Блок с фильтрами</h2>
         <!-- Блок с фильтрами поиска отеля -->
         <form method="get" action="https://echo.htmlacademy.ru">
-          <ul>
-            <li>
-              <p>Инфраструктура:</p>
+            <fieldset>
+              <legend>Инфраструктура:</legend>
               <input type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
               <input type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
               <input type="checkbox" name="wi-fi" id="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
-            </li>
-            <li>
-              <p>Тип жилья:</p>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
               <input type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
               <input type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
               <input type="checkbox" name="apartments" id="apartments" checked>
               <label for="apartments">Апартаменты</label>
-            </li>
-            <li>
+            </fieldset>
+            <fieldset>
               <p>Стоимость в сутки (P):</p>
               <ul>
                 <li>от 0</li>
@@ -62,8 +61,7 @@
               <img src="img/filter-button.svg" width="20" height="23" alt="нижняя граница цены">
               <img src="img/filter-button.svg" width="20" height="23" alt="верхняя граница цены">
               <button type="submit">Показать</button>
-            </li>
-          </ul>
+            </fieldset>
         </form>
         <p>Найдено:3</p>
         <p>Сортировка:</p>
@@ -91,9 +89,9 @@
       <section>
         <ul>
           <li>
-            <a href="">
-              <h2>Amara resort & spa</h2>
-            </a>
+            <h2>
+              <a href="">Amara resort & spa</a>
+            </h2>
             <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
             <p>
               Гостиница
@@ -108,9 +106,9 @@
           </li>
 
           <li>
-            <a href="">
-              <h2>Desert quail inn</h2>
-            </a>
+            <h2>
+              <a href="">Desert quail inn</a>
+            </h2>
             <img src="img/desert-quail.jpg" width="135" height="90" alt="Desert quail inn">
             <p>
               Мотель
@@ -125,9 +123,9 @@
           </li>
 
           <li>
-            <a href="">
-              <h2>Villas at poco diablo</h2>
-            </a>
+            <h2>
+              <a href="">Villas at poco diablo</a>
+            </h2>
             <img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
             <p>
               Апартаменты
