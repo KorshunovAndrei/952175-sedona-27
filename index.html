@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -11,7 +14,7 @@
   			<img src="img/logo.svg" width="140" height="72" alt="City of Sedona">
   		</a>
 
-  		<nav>
+  		<nav class="header-nav">
   			<ul>
   				<li>
   					<a href="">Информация</a>
@@ -30,12 +33,12 @@
   	</header>
 
   	<main> 		
-  		<div>
+  		<div class="slogan">
   			<!-- Баннер -->
   			<img src="img/welcome.svg" width="459" height="353" alt="welcome to the gorgeous sedona! Because the grand canyon sucks!">
   		</div>
 
-  		<section>
+  		<section class="advertisement">
   			<h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
 
   			<p>Рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
@@ -49,17 +52,17 @@
   					<img src="img/index-image-1.jpg" width="800" height="401" alt="Местное популярное заведение Open Bange">
   					<ol>
   						<li>
-  							<!-- <img src="img_logo-1" alt="img_logo-1"> -->
+  							<img src="img/icon-1.svg" width="75" height="72" alt="img_logo-1">
   							<h3>Жильё</h3>
   							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
   						</li>
   						<li>
-  							<!-- <img src="img_logo-2" alt="img_logo-2"> -->
+  							<img src="img/icon-3.svg" width="74" height="70" alt="img_logo-2">
   							<h3>Еда</h3>
   							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
   						</li>
   						<li>
-  							<!-- <img src="img_logo-3" alt="img_logo-3"> -->
+  							<img src="img/icon-2.svg" width="64" height="76"  alt="img_logo-3">
   							<h3>Сувениры</h3>
   							<p>Не только китайского, но и местного производства!</p>
   						</li>
@@ -89,37 +92,45 @@
   			</ol>
   		</section>
 
-  		<section>
+  		<section class="search-box">
   			<h2>Форма выбора отеля</h2>
-  			<p>Заинтересовались?</p>
+  			<p class="lead">Заинтересовались?</p>
   			<p>
   				Укажите предполагаемые даты поездки,<br>
   				и мы покажем вам лучшие предложения гостиниц в седоне
   			</p>
-  			<button type="button">Поиск гостиницы в седоне</button>
+  			<button class="search-button" type="button">Поиск гостиницы в седоне</button>
 
   			<!--Форма поиска гостиницы в седоне -->
   			<form method="get" action="https://echo.htmlacademy.ru">
-  				<label for="arrival-date">Дата заезда:</label> 
-  				<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-  				<button type="button" aria-label="Открыть календарь">
-  					<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
-  				</button>
-  				<label for="date-of-departure">Дата выезда:</label>
-  				<input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
-  				<button type="button" aria-label="Открыть календарь">
-  					<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
-  				</button>
-  				<label for="adult-number">Взрослые:</label>
-  				<button type="button" aria-label="Уменьшить колличество взрослых">-</button> 
-  				<input type="text" name="adult-number" id="adult-number" placeholder="2">
-  				<button type="button" aria-label="Увеличить колличество взрослых">+</button>
-  				<label for="children-number">Дети:</label>
-  				<button type="button" aria-label="Уменьшить колличество детей">-</button>
-  				<input type="text" name="children-number" id="children-number" placeholder="0">
-  				<button type="button" aria-label="Увеличить колличество детей">+</button>
+          <p>
+    				<label for="arrival-date">Дата заезда:</label> 
+    				<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+    				<button type="button" aria-label="Открыть календарь">
+    					<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
+    				</button>
+          </p>
+          <p>
+    				<label for="date-of-departure">Дата выезда:</label>
+    				<input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+    				<button type="button" aria-label="Открыть календарь">
+    					<img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
+    				</button>
+          </p>
+          <p>
+    				<label for="adult-number">Взрослые:</label>
+    				<button type="button" aria-label="Уменьшить колличество взрослых">-</button> 
+    				<input type="text" name="adult-number" id="adult-number" placeholder="2">
+    				<button type="button" aria-label="Увеличить колличество взрослых">+</button>
+          </p>
+          <p>
+    				<label for="children-number">Дети:</label>
+    				<button type="button" aria-label="Уменьшить колличество детей">-</button>
+    				<input type="text" name="children-number" id="children-number" placeholder="0">
+    				<button type="button" aria-label="Увеличить колличество детей">+</button>
+          </p>
+  				<button class="form-button" type="submit">Найти</button>
 
-  				<button type="submit">Найти</button>
   			</form>
         
   			<!-- Здесь будет интерактивная карта -->
@@ -127,8 +138,9 @@
   		</section>
   	</main>
 
-  	<footer>
+  	<footer class="footer">
   		<p>#VisitSedona</p>
+      <p>Тел: +7(495) 666-02-66</p>
 
   		<ul>
   			<li>
@@ -141,9 +153,8 @@
   				<a href="">Youtube</a>
   			</li>
   		</ul>
-
+      <span>Website by</span>
   		<a href="https://htmlacademy.ru/intensive/htmlcss">
-  			Website by
   			<img src="img/html-academy-logo.svg" width="115" height="41" alt="htmlacademy">
   		</a>
   	</footer>

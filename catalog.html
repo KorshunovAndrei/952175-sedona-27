@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -11,7 +14,7 @@
   			<img src="img/logo.svg" width="140" height="72" alt="City of Sedona">
   		</a>
 
-  		<nav>
+  		<nav class="header-nav">
   			<ul>
   				<li>
             <a href="">Информация</a>
@@ -23,7 +26,7 @@
             <a href="">Карта штата</a>
           </li>
   				<li>
-            <a>Гостиницы</a>
+            <a class="active">Гостиницы</a>
           </li>
   			</ul>
   		</nav>
@@ -86,7 +89,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="hotel-list">
         <ul>
           <li>
             <h2>
@@ -97,11 +100,11 @@
               Гостиница
               <span>от 4000 р.</span>
             </p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a class="btn-1" href="">Подробнее</a>
+            <a class="btn-2" href="">Забронировать</a>
             <p>
               <span>Звезды</span>
-              <span>рейтинг:8.5</span>
+              <span class="rating">рейтинг: 8,5</span>
             </p>
           </li>
 
@@ -114,11 +117,11 @@
               Мотель
               <span>от 3000 р.</span>
             </p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a class="btn-1" href="">Подробнее</a>
+            <a class="btn-2" href="">Забронировать</a>
             <p>
               <span>Звезды</span>
-              <span>рейтинг:8.9</span>
+              <span class="rating">рейтинг: 8,9</span>
             </p>
           </li>
 
@@ -131,19 +134,20 @@
               Апартаменты
               <span>от 2000 р.</span>
             </p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a class="btn-1" href="">Подробнее</a>
+            <a class="btn-2" href="">Забронировать</a>
             <p>
               <span>Звезды</span>
-              <span>рейтинг:9,2</span>
+              <span class="rating">рейтинг: 9,2</span>
             </p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>#VisitSedona</p>
+      <p>Тел: +7(495) 666-02-66</p>
 
       <ul>
         <li>
@@ -156,9 +160,8 @@
           <a href="">Youtube</a>
         </li>
       </ul>
-
+      <span>Website by</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        Website by 
         <img src="img/html-academy-logo.svg" width="115" height="41" alt="htmlacademy">
       </a>
     </footer>
