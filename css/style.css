@@ -16,7 +16,9 @@ a {
 .header-nav ul,
 .hotels ul,
 .footer ul,
-.advertisement ol {
+.advertisement ol,
+.filter ul,
+.sort ul {
 	list-style: none;
 }
 
@@ -256,7 +258,67 @@ a {
 	margin: -1px;
 	border: 0;
 	padding: 0;
-	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
 	overflow: hidden;
 }
 
+.filter {
+	background: url("../img/filter-background-banner.jpg") no-repeat;
+	color: #ffffff;
+
+}
+
+.filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.sort {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.sort .result {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.sort a {
+	color: #b2b2b2;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort a:hover {
+	color: #81b3d2;
+}
+
+.sort a:active {
+	color: #000000;
+	border: none;
+}
+
+.sort .active {
+	color: #81b3d2;
+	border: none;
+}
+
+.sort .arrow {
+	color: #cacaca;
+	border: none;
+}
+
+.sort .arrow:hover {
+	color: #000000;
+}
+
+.sort .arrow:active {
+	color: #81b3d2;
+}
+
+.sort .arrow-active {
+	color: #81b3d2;
+	border: none;
+}
