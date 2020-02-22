@@ -23,11 +23,14 @@ a {
 }
 
 .header {
-	display: flex;
 	padding: 0;
-	align-content: flex-start;
 }
 
+.header .logo {
+	position: absolute;
+	left: 885px;
+	top: -1px;
+}
 
 .header-nav ul {
 	display: flex;
@@ -38,12 +41,15 @@ a {
 .header-nav li {
 	box-sizing: border-box;
 	width: 239px;
-	height: 56px;
 	padding: 15px;
 	text-align: center;
 }
 
-.header-nav li:nth-child(3) {
+.header-nav li:nth-child(2) {
+	margin-right: 244px;
+}
+
+.logo {
 	width: 244px;
 	padding: 0;
 }
@@ -160,13 +166,10 @@ a {
 	align-items: center;
 	padding-top: 76px;
 	padding-bottom: 0;
-	margin: 0;
+	margin: 0px;
 	border: 0;
 }
 
-.slogan .polygon {
-	border-bottom: 1px solid #ffffff;
-}
 .headline {
 	display: flex;
 	flex-direction: column;
@@ -183,6 +186,10 @@ a {
 	width: 500px;
 	margin-top: 0;
 	margin-bottom: 24px;
+}
+
+.advertisement {
+	width: 100%;
 }
 
 .advertisement p {
@@ -394,9 +401,7 @@ a {
 
 .map {
 	width: 100%;
-	margin: 0;
-	padding: 0;
-	background: url(../img/map.png) no-repeat;
+	background: url("../img/map.png") no-repeat;
 }
 
 .map form {
@@ -408,10 +413,11 @@ a {
 	padding-bottom: 55px;
 	padding-left: 55px;
 	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 	margin-bottom: 77px;
+}
+
+.map p {
+	text-align: left;
 }
 
 .hotels ul {
@@ -429,11 +435,6 @@ a {
 
 .hotels img {
 	margin-right: 30px;
-}
-
-.hotels .container {
-	display: flex;
-	flex-direction: column;
 }
 
 .container h2 {
@@ -456,7 +457,12 @@ a {
 
 .container-rating {
 	margin-left: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+}
+
+.container-rating span {
+	display: block;
+}
+
+.container-rating span:first-child {
+	margin-bottom: 48px;
 }
