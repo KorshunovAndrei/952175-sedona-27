@@ -28,8 +28,9 @@ a {
 
 .header .logo {
 	position: absolute;
+	transform: translateX(-50%);
+	text-align: center;
 	left: 50%;
-	margin-left: -70px;
 	top: -1px;
 }
 
