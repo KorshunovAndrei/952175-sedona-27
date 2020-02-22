@@ -29,7 +29,6 @@ a {
 .header .logo {
 	position: absolute;
 	transform: translateX(-50%);
-	text-align: center;
 	left: 50%;
 	top: -1px;
 }
@@ -49,11 +48,6 @@ a {
 
 .header-nav li:nth-child(2) {
 	margin-right: 244px;
-}
-
-.logo {
-	width: 244px;
-	padding: 0;
 }
 
 .header-nav a {
@@ -210,8 +204,6 @@ a {
 	font-size: 14px;
 	line-height: 24px;
 	background-color: #ffffff;
-	align-items: center;
-	text-align: center;
 }
 
 .search-box .lead {
