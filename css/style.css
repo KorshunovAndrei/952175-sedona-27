@@ -26,6 +26,11 @@ a {
 	padding: 0;
 }
 
+.logo {
+	width: 140px;
+	height: 72px;
+}
+
 .header .logo {
 	position: absolute;
 	transform: translateX(-50%);
