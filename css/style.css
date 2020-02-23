@@ -558,3 +558,90 @@ a {
 .container-rating span:first-child {
 	margin-bottom: 48px;
 }
+
+.filter form {
+	display: flex;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.filter fieldset {
+	width: 150px;
+	border: none;
+	box-sizing: border-box;
+}
+
+.filter fieldset:first-child {
+	margin-right: 80px;
+}
+
+.filter fieldset:last-child {
+	margin-left: auto;
+}
+
+.filter ul {
+	display: flex;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	width: 314px;
+	padding: 5px;
+}
+
+.filter li {
+	width: 157px;
+	text-align: center;
+}
+
+.filter li:first-child {
+	border-right: 2px solid #ffffff;
+}
+
+.filter button {
+	display: block;
+	margin: auto;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	color: #ffffff;
+	width: 133px;
+	height: 32px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.sort {
+	display: flex;
+	align-items: baseline;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.sort .result {
+	margin-right: 55px;
+}
+
+.sort ul {
+	display: flex;
+}
+
+.sort li {
+	margin-right: 30px;
+}
+
+.sort ul:nth-child(4) {
+	margin-left: auto;
+}
+
+.arrows li {
+	margin: 0;
+}
+
+.arrows li:first-child {
+	margin-right: 5px;
+}
