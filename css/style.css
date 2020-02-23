@@ -609,6 +609,11 @@ a {
 	line-height: 21px;
 }
 
+.filter button:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
 .sort {
 	display: flex;
 	align-items: baseline;
