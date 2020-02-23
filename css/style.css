@@ -240,7 +240,7 @@ a {
 	padding-left: 20px;
 }
 
-.advertisement-item div {
+.advertisement-item .advertisement-item-title {
 	width: 400px;
 	text-align: center;
 	padding-top: 46px;
@@ -264,10 +264,8 @@ a {
 .nested-list {
 	background-color: #ffffff;
 	color: #333333;
-}
-
-.nested-list {
 	display: flex;
+	padding-left: 0;
 }
 
 .nested-list li {
@@ -489,9 +487,8 @@ a {
 }
 
 .map {
-	width: 100%;
+	height: 473px;
 	background: url("../img/map.png") no-repeat;
-	padding-bottom: 75px;
 }
 
 .map form {
@@ -603,10 +600,11 @@ a {
 	border-radius: 2px;
 	color: #ffffff;
 	width: 133px;
-	height: 32px;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 21px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .filter button:hover {
