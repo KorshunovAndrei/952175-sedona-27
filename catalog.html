@@ -40,14 +40,17 @@
                 <fieldset>
                   <legend>Инфраструктура:</legend>
                   <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                     <input type="checkbox" name="pool" id="pool" checked>
                     <label for="pool">Бассейн</label>
                   </p>
                   <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
                     <input type="checkbox" name="parking" id="parking">
                     <label for="parking">Парковка</label>
                   </p>
                   <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
                     <input type="checkbox" name="wi-fi" id="wi-fi">
                     <label for="wi-fi">Wi-Fi</label>
                   </p>
@@ -55,14 +58,17 @@
                 <fieldset>
                   <legend>Тип жилья:</legend>
                   <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                     <input type="checkbox" name="hotel" id="hotel" checked>
                     <label for="hotel">Гостиница</label>
                   </p>
                   <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                     <input type="checkbox" name="motel" id="motel" checked>
                     <label for="motel">Мотель</label>
                   </p>
                   <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                     <input type="checkbox" name="apartments" id="apartments" checked>
                     <label for="apartments">Апартаменты</label>
                   </p>
@@ -73,11 +79,14 @@
                     <li>от 0</li>
                     <li>до 3000</li>
                   </ul>
-                  <p>
-                    <img src="img/filter-button.svg" width="20" height="23" alt="нижняя граница цены">
-                    <img src="img/filter-button.svg" width="20" height="23" alt="верхняя граница цены">
-                  </p>
-                  <button type="submit">Показать</button>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                  <button class="btn-transparent" type="submit">Показать</button>
                 </fieldset>
             </form>
           </div>
@@ -97,10 +106,14 @@
             </ul>
             <ul class="arrows">
               <li>
-                <a class="arrow" href="">Стрека вверх</a>
+                <a class="arrow" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a>
               </li>
               <li>
-                <a class="arrow-active">Стрелка вниз</a>
+                <a class="arrow arrow-active">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -125,7 +138,12 @@
                 </div>
               </div>
               <div class="container-rating">
-                <span>4 Звезды</span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                </span>
                 <span class="rating">рейтинг: 8,5</span>
               </div>
             </li>
@@ -146,7 +164,11 @@
                 </div>
               </div>
               <div class="container-rating">
-                <span>3 Звезды</span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                </span>
                 <span class="rating">рейтинг: 8,9</span>
               </div>
             </li>
@@ -167,7 +189,10 @@
                 </div>
               </div>
               <div class="container-rating">
-                <span>2 Звезды</span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                </span>
                 <span class="rating">рейтинг: 9,2</span>
               </div>
             </li>
