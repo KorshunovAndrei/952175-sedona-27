@@ -431,19 +431,23 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 1);
 	color: #000000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;
 	width: 1200px;
 	min-height: 100px;
-	top: 2650px;
 	padding-top: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
 	box-sizing: border-box;
+}
+
+.footer-index {
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	bottom: 0;
 }
 
 .footer ul {
@@ -606,6 +610,7 @@ a {
 }
 
 .map {
+	position: relative;
 	height: 594px;
 	background: url("../img/map.png") no-repeat;
 }
