@@ -54,15 +54,15 @@
               <img src="img/index-image-1.jpg" width="800" height="256" alt="Местное популярное заведение Open Bange">
               <ul class="nested-list">
                 <li>
-                  <h3>Жильё</h3>
+                  <h3 class="housing">Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                   <li>
-                  <h3>Еда</h3>
+                  <h3 class="food">Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                   <li>
-                  <h3>Сувениры</h3>
+                  <h3 class="souvenirs">Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
@@ -114,28 +114,28 @@
               <p>
                 <label for="arrival-date">Дата заезда:</label> 
                 <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-                <button type="button" aria-label="Открыть календарь">
+                <button class="arrival-date-calendar" type="button" aria-label="Открыть календарь">
                   <img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату заезда">
                 </button>
               </p>
               <p>
                 <label for="date-of-departure">Дата выезда:</label>
                 <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
-                <button type="button" aria-label="Открыть календарь">
+                <button class="date-of-departure-calendar" type="button" aria-label="Открыть календарь">
                   <img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату выезда">
                 </button>
               </p>
               <p>
                 <label for="adult-number">Взрослые:</label>
-                <button type="button" aria-label="Уменьшить колличество взрослых">-</button> 
+                <button class="adult-minus" type="button" aria-label="Уменьшить колличество взрослых">-</button> 
                 <input type="text" name="adult-number" id="adult-number" placeholder="2">
-                <button type="button" aria-label="Увеличить колличество взрослых">+</button>
+                <button class="adult-plus" type="button" aria-label="Увеличить колличество взрослых">+</button>
               </p>
               <p>
                 <label for="children-number">Дети:</label>
-                <button type="button" aria-label="Уменьшить колличество детей">-</button>
+                <button class="children-minus" type="button" aria-label="Уменьшить колличество детей">-</button>
                 <input type="text" name="children-number" id="children-number" placeholder="0">
-                <button type="button" aria-label="Увеличить колличество детей">+</button>
+                <button class="children-plus" type="button" aria-label="Увеличить колличество детей">+</button>
               </p>
               <button class="form-button" type="submit">Найти</button>
             </form>
