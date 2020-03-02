@@ -154,14 +154,14 @@ a {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
-
+  
 
 .slogan {
 	background: url("../img/background-banner.jpg") no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center;   
 	padding-top: 76px;
 	height: 430px;
 }
@@ -172,7 +172,7 @@ a {
 	height: 59px;
 	position: relative;
 	margin-top: auto;
-	bottom: -3px;
+	bottom: -2px;
 	background: url("../img/polygon.svg") no-repeat;
 }
 
@@ -434,12 +434,80 @@ a {
 	background-color: rgba(255, 255, 255, 0.9);
 	color: #000000;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	position: absolute;
+	width: 1200px;
+	min-height: 100px;
+	top: 2650px;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-sizing: border-box;
 }
 
 .footer ul {
 	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 145px;
+}
+
+.footer .htmlacademy-logo {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	margin-right: 30px;
+}
+
+.htmlacademy-logo span {
+	padding-top: 6px;
+}
+
+.footer .htmlacademy-logo-link {
+	width: 115px;
+	height: 41px;
+}
+
+.htmlacademy-logo-link path {
+	fill: #000000;
+}
+
+.footer .social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+	margin-bottom: 5px;
+}
+
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:focus {
+	background-color: #5496bd;
+}
+
+.social-button:focus path {
+	fill: #88b6d1;
+}
+
+.footer .number {
+	box-sizing: border-box;
+	margin: 0;
+	margin-left: 30px;
+	padding: 0;
+}
+
+.footer p {
+	margin: 0;
+	margin-bottom: 5px;
 }
 
 .footer span {
@@ -538,7 +606,7 @@ a {
 }
 
 .map {
-	height: 473px;
+	height: 594px;
 	background: url("../img/map.png") no-repeat;
 }
 
