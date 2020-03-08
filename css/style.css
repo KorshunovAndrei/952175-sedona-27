@@ -1001,10 +1001,10 @@ a {
 	top: 5px;
 }
 
-.counter {
+.filter .counter {
 	margin: 0;
 	margin-left: 315px;
-	width: 240px;
+	width: 320px;
 	box-sizing: border-box;
 }
 
