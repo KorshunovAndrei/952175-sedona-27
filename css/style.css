@@ -15,7 +15,7 @@ a {
 
 .header-nav ul,
 .hotels ul,
-.footer ul,
+.footer .social-networks,
 .advertisement ol,
 .filter ul,
 .sort ul {
@@ -454,7 +454,7 @@ a {
 	bottom: 0;
 }
 
-.footer ul {
+.footer .social-networks {
 	display: flex;
   	flex-wrap: wrap;
 	margin: 0;
