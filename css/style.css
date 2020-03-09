@@ -450,7 +450,12 @@ a {
 	bottom: 0;
 }
 
-.footer .social-networks {
+.footer-social {
+	position: relative;
+	left: -25px;
+}
+
+.footer-social .social-networks {
 	display: flex;
   	flex-wrap: wrap;
 	margin: 0;
@@ -458,7 +463,11 @@ a {
 	width: 160px;
 }
 
-.footer li {
+.social-networks li {
+	margin: 0;
+}
+
+.social-networks .social-button {
 	margin: 3px;
 }
 
@@ -529,6 +538,7 @@ a {
 	content: url("../img/facebook.svg");
 	top: 50%;
 	left: 50%;
+	transform: translateY(10%);
 }
 
 .btn-youtube::before {
