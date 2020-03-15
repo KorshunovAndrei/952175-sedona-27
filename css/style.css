@@ -680,9 +680,20 @@ a {
 	transform: translateX(-50%);
 }
 
-/*.search-form-off {
-	top: -400px;
-}*/
+.search-form-on {
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.search-form-off {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
 
 .search-form form {
 	width: 568px;
