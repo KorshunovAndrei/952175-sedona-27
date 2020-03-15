@@ -1,6 +1,6 @@
 "use strict";
 
-let search = document.querySelector(".search-button");
+let searchBtn = document.querySelector(".search-button");
 let form = document.querySelector(".search-form form");
 let formBtn = form.querySelector(".form-button");
 let arrivalDate = form.querySelector("[name=arrival-date]");
@@ -9,7 +9,7 @@ let adult = form.querySelector("[name=adult-number]");
 let children = form.querySelector("[name=children-number]");
 let map = document.querySelector(".map");
 
-search.addEventListener("click", function (evt) {
+searchBtn.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	if(!form.classList.contains("search-form-off")) 
 		form.classList.add("search-form-off");
