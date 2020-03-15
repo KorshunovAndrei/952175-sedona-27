@@ -589,28 +589,41 @@ a {
 	font-weight: 700;
 }
 
-.filter-item label {
+.filter-item {
 	position: relative;
+	overflow: hidden;
 	display: inline-block;
     vertical-align: middle;
     padding-left: 40px;
 	padding-bottom: 5px;
-	margin-top: 2px;
+	margin-top: 18px;
 	cursor: pointer;
 }
 
-.filter-item label::before {
+.checkbox-on {
 	position: absolute;
-	left: 0px;
-    content: "";
-    width: 27px;
-    height: 23px;
-    background-image: url(../img/checkbox-off.svg);
-    background-repeat: no-repeat;
+	left: -30px;
 }
 
-.filter-item input:checked + label::before {
-    background-image: url(../img/checkbox-on.svg);
+.checkbox-off {
+	position: absolute;
+	left: 0;
+}
+
+.check-input:checked ~ .checkbox-on {
+	left: 0;
+}
+
+.check-input:checked ~ .checkbox-off {
+	left: -30px;
+}
+
+.check-input:disabled ~ * .disabled {
+	fill: #6a6a6a;
+}
+
+.check-input:checked:disabled ~ * .disabled {
+	fill: #6a6a6a;
 }
 
 .sort .result {
@@ -680,18 +693,11 @@ a {
 	transform: translateX(-50%);
 }
 
-.search-form-on {
-	-webkit-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	transition-duration: 1s;
-}
-
 .search-form-off {
 	-webkit-transform: translateY(-100%);
 	-ms-transform: translateY(-100%);
 	transform: translateY(-100%);
 	-webkit-transition-duration: 1s;
-	-o-transition-duration: 1s;
 	transition-duration: 1s;
 }
 
@@ -706,6 +712,8 @@ a {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 .search-form input[placeholder] {
@@ -1112,12 +1120,12 @@ a {
 }
 
 /* Уберает стрелки у input[type="number"]*/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.filter input::-webkit-outer-spin-button,
+.filter input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-input[type='number'] {
+.filter input[type='number'] {
     -moz-appearance:textfield;
 }
