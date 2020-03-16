@@ -461,6 +461,8 @@ a {
 
 .social-networks .social-button {
 	margin: 3px;
+	font-size: 0;
+	line-height: 0;
 }
 
 .footer .htmlacademy-logo {
@@ -530,7 +532,6 @@ a {
 	content: url("../img/facebook.svg");
 	top: 50%;
 	left: 50%;
-	transform: translateY(10%);
 }
 
 .btn-youtube::before {
@@ -602,7 +603,8 @@ a {
 
 .checkbox-on {
 	position: absolute;
-	left: -30px;
+	display: none;
+	left: 0;
 }
 
 .checkbox-off {
@@ -611,18 +613,14 @@ a {
 }
 
 .check-input:checked ~ .checkbox-on {
-	left: 0;
+	display: block;
 }
 
 .check-input:checked ~ .checkbox-off {
-	left: -30px;
+	display: none;
 }
 
-.check-input:disabled ~ * .disabled {
-	fill: #6a6a6a;
-}
-
-.check-input:checked:disabled ~ * .disabled {
+.check-input:disabled ~ svg {
 	fill: #6a6a6a;
 }
 
