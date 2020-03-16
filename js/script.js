@@ -11,14 +11,14 @@ let map = document.querySelector(".map");
 form.classList.add("search-form-off");
 
 searchBtn.addEventListener("click", function () {
-	if(form.classList.contains("search-form-off")) 
-		form.classList.remove("search-form-off");
-	else
-		form.classList.add("search-form-off");
+  if(form.classList.contains("search-form-off")) 
+    form.classList.remove("search-form-off");
+  else
+    form.classList.add("search-form-off");
 });
 
 form.addEventListener("submit", function(evt){
-	if(!arrivalDate.value || !dateOfDeparture.value || !adult.value || !children.value) {
-		evt.preventDefault();
-	}
+  if(!arrivalDate.value || !dateOfDeparture.value || !adult.value || !children.value) {
+    evt.preventDefault();
+  }
 });
