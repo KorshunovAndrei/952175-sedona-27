@@ -518,28 +518,23 @@ a {
 	opacity: .3;
 }
 
-.btn-twitter::before {
-	content: url("../img/twitter.svg");
+.social-button::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.btn-twitter::before {
+	content: url("../img/twitter.svg");
 }
 
 .btn-facebook::before {
 	content: url("../img/facebook.svg");
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .btn-youtube::before {
 	content: url("../img/youtube.svg");
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .footer .number {
