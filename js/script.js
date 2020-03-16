@@ -10,8 +10,7 @@ let map = document.querySelector(".map");
 
 form.classList.add("search-form-off");
 
-searchBtn.addEventListener("click", function (evt) {
-	evt.preventDefault();
+searchBtn.addEventListener("click", function () {
 	if(form.classList.contains("search-form-off")) 
 		form.classList.remove("search-form-off");
 	else
